@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Javascript Koans</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="lib/jasmine/jskoans-jasmine.css">
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+  <!-- Jasmine -->
+  <script type="text/javascript" src="lib/jasmine/jasmine.js"></script>
+  <script type="text/javascript" src="lib/jasmine/jasmine-html.js"></script>
+  <script type="text/javascript" src="lib/jasmine/jskoans-jasmine-html.js"></script>
+  <script type="text/javascript" src="lib/jasmine/jasmine-jquery.js"></script>  
+  <script type="text/javascript" src="lib/__.js"></script>
+
+  <!-- Koans -->
+  <script type="text/javascript" src="koans/AboutUtilities.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+  jasmine.getEnv().addReporter(new JsKoansReporter());
+  jasmine.getEnv().execute();
+</script>
+
+</body>
+</html>

@@ -61,7 +61,8 @@ describe("About Utilities", function() {
     expect(__).toEqual(boogieMonsterInArrayResult);
     expect(__).toEqual(notFoundInArrayResult);
   });
-    it("should determine types using $.type", function() {
+  
+  it("should determine types using $.type", function() {
     var num = new Number(3);
     var arr = [];
     

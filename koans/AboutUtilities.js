@@ -53,9 +53,9 @@ describe("About Utilities", function() {
     
     var array = ["Pie", 42, "Cake", "BoogieMonster"];
     
-    var pieInArrayResult = $.inArray(array, "Pie");
-    var boogieMonsterInArrayResult = $.inArray(array, "BoogieMonster");
-    var notFoundInArrayResult = $.inArray(array, 98765);
+    var pieInArrayResult = $.inArray("Pie", array);
+    var boogieMonsterInArrayResult = $.inArray("BoogieMonster", array);
+    var notFoundInArrayResult = $.inArray(98765, array);
     
     expect(pieInArrayResult).toEqual(__);
     expect(boogieMonsterInArrayResult).toEqual(__);

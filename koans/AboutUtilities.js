@@ -18,9 +18,9 @@ describe("About Utilities", function() {
   
   it("should iterate an object literal with $.each", function() {
     var object = { name: "Swedish Chef", age: 2.5 };
-    
-    $.each(object, function(key, value) {    var expectedValue = __;
     var actualValue = 0;
+    
+    $.each(object, function(key, value) {    
       if(key === "name") {
         actualValue = value;
       }

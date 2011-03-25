@@ -72,6 +72,7 @@ describe("About Utilities", function() {
     expect(type1).toEqual(__);
     expect(type2).toEqual(__);
   });
+
   it("should test for array type using $.isArray", function() {
     var array = [1, "two", 3];
     var object = { property: "value" };
@@ -106,17 +107,6 @@ describe("About Utilities", function() {
     expect(isFunction1).toEqual(__);
     expect(isFunction2).toEqual(__);
   });
-  
-  it("should determine types using $.type", function() {
-    var num = new Number(3);
-    var arr = [];
-    
-    var type1 = $.type(num);
-    var type2 = $.type(arr);
-    
-    expect(type1).toEqual(__);
-    expect(type2).toEqual(__);
-  });  
   
   it("should perform translations on each array element returning a new array using $.map", function() {
     var array = ["a", "b", "c", "d"];

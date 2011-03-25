@@ -129,7 +129,7 @@ describe("About Utilities", function() {
   });
   
   it("should trim strings using $.trim", function() {
-    var string = "   IE does not have a native implentation of trim, so this jquery method is handy     ";
+    var string = "   Internet Explorer does not have a native implementation of trim, so this jquery method is handy     ";
     
     var trimmed = $.trim(string);
     expect(trimmed).toEqual(__);

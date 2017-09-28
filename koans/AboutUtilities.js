@@ -100,7 +100,7 @@ describe("About Utilities", function() {
         return weight;
       }
     };
-      '{"name":"John"}'
+
     var isFunction1 = $.isFunction(object.name);
     var isFunction2 = $.isFunction(object.getWeight);
     

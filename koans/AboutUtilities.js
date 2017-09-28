@@ -33,7 +33,7 @@ describe("About Utilities", function() {
     var object1 = { animal: "cardinal", color: "red" };
     var object2 = { firstName: "woody", lastName: "woodpecker" };
     
-    var result = $.extend(false, object1, object2);
+    var result = $.extend({}, object1, object2);
     
     expect(result.lastName).toEqual(__);
   });
@@ -100,7 +100,7 @@ describe("About Utilities", function() {
         return weight;
       }
     };
-      '{"name":"John"}'
+
     var isFunction1 = $.isFunction(object.name);
     var isFunction2 = $.isFunction(object.getWeight);
     
